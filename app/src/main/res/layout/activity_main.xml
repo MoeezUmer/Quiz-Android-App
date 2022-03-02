@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b39ddb"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/question"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textquestions"
+        android:text="@string/question_declaration"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/truebutton"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40sp"
+            android:background="#65499c"
+            android:text="@string/true_button"
+            android:textSize="20dp"
+            android:textStyle="italic"
+
+            />
+
+        <Button
+            android:id="@+id/falsebutton"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:background="#65499c"
+            android:text="@string/false_button"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#65499c"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/next_button"
+            android:src="@drawable/arrow" />
+
+        <ImageButton
+            android:id="@+id/previous"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:background="#65499c"
+            android:contentDescription="previous"
+            android:layout_marginLeft="-170dp"
+            android:src="@drawable/arrowback"
+
+
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
